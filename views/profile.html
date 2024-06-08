@@ -1,0 +1,376 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>S-Ratings</title>
+</head>
+<body>
+
+ <!-- Navigation Bar -->
+ <nav class="navbar navbar-expand-md  navbar-dark ssc-bg-primary p-1">
+  <div class="container-fluid">
+    <a href="browse.html" class="navbar-brand">
+        <img class="logo" src="../assets/skale-high-resolution-logo-white-transparent.png">
+    </a>
+    <!-- toggle button for mobile nav-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+    aria-label="Toggle navigation"> 
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse "
+    id="main-nav">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item d-md-none">
+          <a href="browse.html" class="nav-link font-heading">BROWSE</a>
+        </li>
+        <li class="nav-item d-none d-md-inline">
+          <a href="browse.html" class="nav-link font-heading">BROWSE</a>
+        </li>
+        <li class="nav-item d-md-none">
+          <a href="about.html" class="nav-link font-heading">ABOUT</a>
+        </li>
+        <li class="nav-item d-none d-md-inline">
+          <a href="about.html" class="nav-link font-heading">ABOUT</a>
+        </li>
+        
+        <li class="nav-item d-md-none">
+          <a href="#profile" class="nav-link font-heading">PROFILE</a>
+        </li>
+        <li class="nav-item d-md-none">
+          <a href="index.html" class="nav-link font-heading">HOME(DEBUG)</a>
+        </li>
+        <li class="nav-item d-none d-md-inline">
+          <a href="index.html" class="nav-link  font-heading">HOME(DEBUG)</a>
+        </li>
+      </ul>
+      <a href="#profile" class="navbar-nav btn ssc-btn-primary d-md-flex  me-2 d-none d-md-inline">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-4">
+                <img class="rounded-circle-img-sm " src="../assets/pp.jpg">
+            </div>
+            <div class="col-8 d-flex align-items-center">
+              <div class="text-white font-special font-md">SkaLe</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- Main Content -->
+<section id="home" class="scc-bg-secondary">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 text-white  justify-content-end d-none d-md-flex">
+        <div class="me-5 mt-5">
+          <h3 class="font-weight-bold"> My Profile</h3>
+          <nav>
+            <div class="nav d-flex flex-column" id="nav-tab-profile" role="tablist">
+              <button class="font-subheading  text-start px-0 nav-link  nav-link-profile active" id="nav-account-tab"
+              data-bs-toggle="tab" data-bs-target="#nav-account" aria-selected="true">MY ACCOUNT</button>
+              <button class="font-subheading  text-start px-0 nav-link nav-link-profile" id="nav-reviews-tab"
+              data-bs-toggle="tab" data-bs-target="#nav-reviews" aria-selected="false">MY REVIEWS</button>
+              <a class="font-subheading  text-start px-0 nav-link nav-link-profile" id="nav-signout-tab"
+              href="index.html" >SIGN OUT</a>
+            </div>
+          </nav>  
+        </div>
+      </div>
+      <div class="col-md-4 text-white d-flex justify-content-start d-md-none">
+        <div class="me-5 mt-5">
+          <h3 class="font-weight-bold"> My Profile</h3>
+          <nav>
+            <div class="nav d-flex flex-column" id="nav-tab-profile" role="tablist">
+              <button class="font-subheading  text-start px-0 nav-link  nav-link-profile active" id="nav-account-tab"
+              data-bs-toggle="tab" data-bs-target="#nav-account" aria-selected="true">MY ACCOUNT</button>
+              <button class="font-subheading  text-start px-0 nav-link nav-link-profile" id="nav-reviews-tab"
+              data-bs-toggle="tab" data-bs-target="#nav-reviews" aria-selected="false">MY REVIEWS</button>
+              <a class="font-subheading  text-start px-0 nav-link nav-link-profile" id="nav-signout-tab"
+              href="login.html" >SIGN OUT</a>
+            </div>
+          </nav>          
+        </div>
+      </div>
+      <div class="col-md-8 ">
+        <div class="ssc-bg-primary ssc-border-left position-relative">
+          <div class="container-fluid p-0">
+            <div class="banner">
+                <div class="row mt-5 mb-4 ms-2">
+                  <div class="col-md-4">
+                    <img class="rounded-circle-img-lg" src="../assets/pp.jpg">
+                    <button class="btn ssc-btn-primary p-1 cam-icon text-white"><i class="fa fa-camera"></i></button>
+                  </div>
+                  <div class="col-md-8 ">
+                    <div class="ssc-bg-secondary-tr ms-0 ">
+                      <h5 class="text-white mt-2 ms-2 pt-4 font-special font-weight-bold" id="main_username">SkaLe</h5>
+                      <div class="container pb-2">
+                        <div class="image-text-container">
+                          <img class="flag-icon ms-2" src="../assets/flags/ua.svg">
+                          <p class="ms-2 font-weight-bold text-white">Member since Apr 4, 2019</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="profile-banner-icon">
+            <button class="btn ssc-btn-primary p-1 cam-icon text-white"><i class="fa fa-camera"></i></button>
+          </div>
+          <div class="tab-content" id="nav-tabcontent">
+            <div class="tab-pane fade show active p-3" id="nav-account" role="tabpanel"
+            aria-labelledby="nav-account-tab">
+              <h3 class="mt-2 text-white ms-4 font-weight-bold">My Account</h3>
+              <hr class="mx-4 common-divider">
+              <div class="mx-2">
+                <nav>
+                  <div class="nav margin-profile-nav" id="nav-tab-account" role="tablist">
+                    <button class="font-heading  text-start nav-link active nav-link-account" id="nav-data-tab"
+                    data-bs-toggle="tab" data-bs-target="#nav-data" aria-selected="true">data</button>
+                    <button class="font-heading  text-start  nav-link nav-link-account" id="nav-password-tab"
+                    data-bs-toggle="tab" data-bs-target="#nav-password" aria-selected="false">Password</button>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabcontent2">
+                  <div class="tab-pane fade show active p-3" id="nav-data" role="tabpanel"
+                  aria-labelledby="nav-data-tab">
+                    <form>
+                      <div class="form-group">
+                        <label for="username" class="text-white font-special font-weight-bold">Username</label>
+                        <input type="text" value="SkaLe" class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="username" placeholder="Enter username">
+                      </div>
+                      <div class="form-group">
+                        <label for="email" class="text-white font-special font-weight-bold">Email adress</label>
+                        <input type="email" value="39SkaLe@gmail.com" class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="email" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="dob" class="text-white font-special font-weight-bold">Date Of Birth</label>
+                        <div class="container-fluid p-0">
+                          <div class="row">
+                            <div class="col-4 pe-1">
+                              <select class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="day">
+                                <option >dd</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22" selected>22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                              </select>
+                            </div>
+                            <div class="col-4 px-1">
+                              <select class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white"  id="month">
+                                <option selected>mm</option>
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July" selected>July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                              </select>
+                            </div>
+                            <div class="col-4 ps-1">
+                              <select class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white"  id="year">
+                                <option selected>yyyy</option>
+                                <option value="2024">2008</option>
+                                <option value="2024">2007</option>
+                                <option value="2024">2006</option>
+                                <option value="2024">2005</option>
+                                <option value="2024" selected>2004</option>
+                                <option value="2024">2003</option>
+                                <option value="2024">2002</option>
+                                <option value="2024">2001</option>
+                                <option value="2024">2000</option>
+                                <option value="2024">1999</option>
+                                <option value="2024">1998</option>
+                                <option value="2024">1997</option>
+                                <option value="2024">1996</option>
+                                <option value="2024">1995</option>
+                                <option value="2024">1994</option>
+                                <option value="2024">1993</option>
+                                <option value="2024">1992</option>
+                                <option value="2024">1991</option>
+                                <option value="2024">1990</option>
+                                <option value="2024">1989</option>
+                                <option value="2024">1988</option>
+                                <option value="2024">1987</option>
+                                <option value="2024">1986</option>
+                                <option value="2024">1985</option>
+                                <option value="2024">1984</option>
+                                <option value="2024">1983</option>
+                                <option value="2024">1982</option>
+                                <option value="2024">1981</option>
+                                <option value="2024">1980</option>
+                                <option value="2024">1979</option>
+                                <option value="2024">1978</option>
+                                <option value="2024">1977</option>
+                                <option value="2024">1976</option>
+                                <option value="2024">1975</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      
+                      </div>
+                      <div class="form-group">
+                        <label for="gender" class="text-white font-special font-weight-bold">Gender</label>
+                        <select class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="Select Gender">
+                          <option >Select Gender</option>
+                          <option value="Male" selected>Male</option>
+                          <option value="Female">Female</option>
+                          <option value="Deer">Deer</option>
+                        </select>
+                      </div>
+                    </form>
+
+                    <button class="btn font-heading ssc-btn-accent p-2">save changes</button>
+                  </div>
+                </div>
+                <div class="tab-content" id="nav-tabcontent2">
+                  <div class="tab-pane fade p-3" id="nav-password" role="tabpanel"
+                  aria-labelledby="nav-password-tab">
+                    <form>
+                      <div class="form-group">
+                        <label for="password" class="text-white font-special font-weight-bold">Current Password</label>
+                        <input type="password" class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="password" placeholder="Enter password">
+                      </div>
+                      <div class="form-group">
+                        <label for="password" class="text-white font-special font-weight-bold">New Password</label>
+                        <input type="password" class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="newpassword" placeholder="Enter password">
+                      </div>
+                      <div class="form-group">
+                        <label for="password" class="text-white font-special font-weight-bold">Confirm New Password</label>
+                        <input type="password" class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="confirmnewpassword" placeholder="Enter password">
+                      </div>
+                    </form>
+                    
+                    <button class="btn font-heading ssc-btn-accent p-2">update password</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade p-3" id="nav-reviews" role="tabpanel"
+            aria-labelledby="nav-reviews-tab">
+              <h3 class="mt-3 text-white ms-5 font-weight-bold">My Reviews</h3>
+              <hr class="mx-5 common-divider">
+              <div class="container-fluid">
+                <p class="text-white font-heading text-center my-5">You haven't rated anything yet</p>
+                <br><br><br><br><br><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="ssc-bg-primary text-white ">
+  <hr class="color-divider mt-4">
+  <img class="logo my-4 mx-auto d-block" src="../assets/skale-high-resolution-logo-white-transparent.png">
+  <div class="container mt-5 text-center pb-5">
+    <div class="row justify-content-center">
+      <div class="col-md-2">
+        <h5 class="font-heading">Overview</h5>
+        <div class="nav flex-column">
+          <a class="nav-link text-white" href="index.html">Home</a>
+          <a class="nav-link text-white" href="about.html">About</a>
+          <a class="nav-link text-white" href="browse.html">Browse</a>
+          <a class="nav-link text-white" href="register.html">Create Account</a>
+          <div class="d-md-none my-3"></div>
+        </div>
+      </div>
+      <div class="col-md-2 d-flex flex-column">
+        <h5 class="font-heading">About Us</h5>
+        <div class="d-md-none my-3"></div>
+        <div class=" mt-auto font-xsm d-md-inline d-none">&copy; 2024 SkaLeSync Corporation. All rights reserved.</div>
+        
+      </div>
+      <div class="col-md-2">
+        <h5 class="font-heading">Follow Us</h5>
+        <div class="nav flex-column">
+          <a class="nav-link text-white" href="#">Facebook</a>
+          <a class="nav-link text-white" href="#">Twitter</a>
+          <a class="nav-link text-white" href="#">Instagram</a>
+          <div class="d-md-none my-3"></div>
+        </div>
+      </div>
+    </div>
+    <div class=" font-xsm d-md-none">&copy; 2024 SkaLeSync Corporation. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script>
+
+<script src="../models/User.js"></script>
+<script src="../controllers/UserController.js"></script>
+<script>
+    window.onload = function() {
+        const currentUser = UserController.getCurrentUser();
+        if (currentUser) {
+            document.getElementById('username').value = currentUser.username;
+            document.getElementById('main_username').innerText = currentUser.username;
+            document.getElementById('email').value = currentUser.email;
+            // Fetch and format dob
+            document.getElementById('day').value = new Date(currentUser.dob).getDate();
+            document.getElementById('month').value = new Date(currentUser.dob).toLocaleString('default', { month: 'long' });
+            document.getElementById('year').value = new Date(currentUser.dob).getFullYear();
+            document.getElementById('gender').value = currentUser.gender;
+        }
+    }
+
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const newUsername = document.getElementById('username').value;
+        const newEmail = document.getElementById('email').value;
+        const newPassword = document.getElementById('password').value;
+        const newDob = new Date(document.getElementById('year').value, document.getElementById('month').value, document.getElementById('day').value);
+        const newGender = document.getElementById
+        UserController.updateProfile(currentUser.email, newUsername, newEmail, newPassword, newDob, newGender);
+    });
+</script>
+
+</body>
+</html>

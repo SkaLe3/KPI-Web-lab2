@@ -1,0 +1,394 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>S-Ratings</title>
+</head>
+
+<body>
+    <div class="overlay"></div> <!-- Overlay div -->
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md  navbar-dark ssc-bg-primary p-1">
+        <div class="container-fluid">
+            <a href="browse.html" class="navbar-brand">
+                <img class="logo" src="../assets/skale-high-resolution-logo-white-transparent.png">
+            </a>
+            <!-- toggle button for mobile nav-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="main-nav">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item d-md-none">
+                        <a href="browse.html" class="nav-link font-heading">BROWSE</a>
+                    </li>
+                    <li class="nav-item d-none d-md-inline">
+                        <a href="browse.html" class="nav-link font-heading">BROWSE</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a href="about.html" class="nav-link font-heading">ABOUT</a>
+                    </li>
+                    <li class="nav-item d-none d-md-inline">
+                        <a href="about.html" class="nav-link font-heading">ABOUT</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a href="profile.html" class="nav-link font-heading">PROFILE</a>
+                    </li>
+                </ul>
+                <a href="profile.html" class="navbar-nav btn ssc-btn-primary d-md-flex  me-2 d-none d-md-inline">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="rounded-circle-img-sm " src="../assets/pp.jpg">
+                            </div>
+                            <div class="col-8 d-flex align-items-center">
+                                <div class="text-white font-special font-md">SkaLe</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section>
+        <div class="container-md ssc-bg-primary game-container">
+            <div class="row">
+                <div class="col-lg-8 pe-0">
+                    <img src="../assets/bf2042.avif" class="game-media img-fluid">
+                </div>
+                <div class="col-lg-4 py-3 ">
+                    <div class="ps-3">
+                    <!-- Title -->
+                    <h3 class="text-white font-weight-bold mb-4">Battlefield 2042</h3>
+                    <p class="text-white font-weight-bold" style="display: inline;">Released On:</p>
+                    <p class="text-white" style="display: inline;">NOV 19, 2021</p>
+                    <hr class="default-divider">
+                    <!-- Critics Rating-->
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-auto">
+                            <p class=" text-white my-0 spacing-wide">METARATING</p>
+                            <p class="font-weight-bold text-white my-0">Mixed or Average</p>
+                            <a href="#reviews" class="text-decoration-underline text-white">Based on 52 Critics
+                                Ratings</a>
+                        </div>
+                        <div class="col-auto">
+                            <div class="score-lg score-color-good">72</div>
+                        </div>
+                    </div>
+                    <div class="color-line-score mt-2 mb-4"></div>
+                    <!-- User Rating-->
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-auto">
+                            <p class=" text-white my-0 spacing-wide">USER RATING</p>
+                            <p class="font-weight-bold text-white my-0">Mixed or Average</p>
+                            <a href="#reviews" class="text-decoration-underline text-white">Based on 421 User
+                                Ratings</a>
+                        </div>
+                        <div class="col-auto">
+                            <div class="score-lg score-color-mid">68</div>
+                        </div>
+                    </div>
+                    <div class="color-line-score mt-2 mb-4"></div>
+                    <!-- My Rating -->
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-auto">
+                            <p class=" text-white my-0 spacing-wide">MY RATING</p>
+                            <p class="font-weight-bold text-white my-2">Hover and click to give a rating</p>
+                        </div>
+                        <div class="col-auto">
+                            <div class="score-lg-empty"></div>
+                        </div>
+                    </div>
+
+                    <div class="row px-0 mt-2">
+                        <div class="d-flex flex-wrap">
+                        <div class="btn score-selector-first score-color-red me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-red me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-red me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-red me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-yellow me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-yellow me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-yellow me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-green me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-green me-1 flex-fill"></div>
+                        <div class="btn score-selector-last score-color-green me-1 flex-fill"></div>
+                        </div>
+                    </div>
+                    <!------------------->
+
+                    <button type="button" class="btn ssc-btn-outline-accent w-100 font-heading mt-3" data-toggle="modal"
+                        data-target="#addReviewModal">Add My Review</button>
+                    </div>
+                    <!-- Modal to add review -->
+                    <div class="modal fade" id="addReviewModal" tabindex="-1" role="dialog"
+                        aria-labelledby="addReviewModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-custom-width" role="document">
+                            <div class="modal-content ssc-bg-primary">
+                                <div class="modal-header d-flex justify-content-between border-0 pb-0">
+                                    <!-- Add review button -->
+                                    <h4 class="modal-title font-weight-bold text-white" id="addReviewModalLabel">Add My
+                                        Review</h4>
+                                    <button type="button" class="btn close ml-auto border-0 font-xl text-white"
+                                        data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body pt-2">
+                                    <!-- Modal content -->
+                                    <div class="row">
+                                        <div class="col-auto pe-0">
+                                            <img src="../assets/battlefield.jpg" class="review">
+                                        </div>
+                                        <div class="col-auto">
+                                            <p class="font-weight-bold text-white">Battlefield 2042</p>
+                                        </div>
+                                    </div>
+                                    <hr class="common-divider">
+                                    <!-- Set Rating -->
+                                    <div class="row">
+                                        <div class="col-auto pe-0">
+                                            <div class="score-lg-empty"></div>
+                                        </div>
+                                        <div class="col-auto ps-2">
+                                            <p class=" text-white my-0 spacing-wide">MY RATING</p>
+                                            <p class="font-weight-bold text-white my-2">Hover and click to give a rating
+                                            </p>
+                                            <div class="row px-0 mt-2">
+                                                <div class="d-flex flex-wrap">
+                                                <div class="btn score-selector-first score-color-red me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-red me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-red me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-red me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-yellow me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-yellow me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-yellow me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-green me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-green me-1 flex-fill"></div>
+                                                <div class="btn score-selector-last score-color-green me-1 flex-fill"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!------------------->
+                                    <hr class="common-divider">
+                                    <!-- Review Form -->
+                                    <form id="reviewForm">
+                                        <div class="form-group">
+                                            <label class="text-white mb-2" for="review">Write a review for
+                                                <strong><em>Battlefield 2042</em></strong></label>
+                                            <textarea class="form-control review-form font-special font-sm" id="review"
+                                                name="review" rows="7" placeholder="Minimum 75 characters"
+                                                required></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer  d-flex  border-0 pt-0 px-3">
+                                    <div class="col-6 mx-auto pe-2">
+                                        <button type="button" class="btn font-heading ssc-btn-outline-accent w-100 "
+                                            data-dismiss="modal">Cancel</button>
+                                    </div>
+                                    <div class="col-6 mx-auto ps-2">
+                                        <button type="submit" form="reviewForm"
+                                            class="btn font-heading ssc-btn-accent w-100 ">post</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <!-- Critics review -->
+                <div class="col-md-6 ps-4">
+                    <h5 class="font-weight-bold text-white">Critic Reviews</h5>
+                    <hr class="default-divider">
+                    <div class="review-post">
+                        <div class="row align-items-center">
+                            <div class="col-auto pe-0">
+                                <div class="score-md score-color-good">100</div>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="font-weight-bold my-0">Critic Name</h5>
+                            </div>
+                            <div class="col-auto ms-auto">
+                                <p class="font-xsm my-0">NOV 11, 2021</p>
+                            </div>
+                        </div>
+                        <p class=" mt-3 overflow-hidden review-text">Battlefield 2042 brings the sandbox back to the
+                            series in bold and controversial ways.
+                            The new Specialist system might seem like sacrilege at first, but it opens up gameplay
+                            opportunities that wewn't
+                            possible in previos titles. The massive, well-designed maps offer plenty of room
+                            for experimentation and emergent stories, and the modes are a blast.
+                        </p>
+                    </div>
+                    <div class="review-post">
+                        <div class="row align-items-center">
+                            <div class="col-auto pe-0">
+                                <div class="score-md score-color-good">99</div>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="font-weight-bold my-0">Critic Name</h5>
+                            </div>
+                            <div class="col-auto ms-auto">
+                                <p class="font-xsm my-0">NOV 11, 2021</p>
+                            </div>
+                        </div>
+                        <p class=" mt-3 overflow-hidden review-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="review-post">
+                        <div class="row align-items-center">
+                            <div class="col-auto pe-0">
+                                <div class="score-md score-color-good">99</div>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="font-weight-bold my-0">Critic Name</h5>
+                            </div>
+                            <div class="col-auto ms-auto">
+                                <p class="font-xsm my-0">NOV 11, 2021</p>
+                            </div>
+                        </div>
+                        <p class=" mt-3 overflow-hidden review-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="review-post">
+                        <div class="row align-items-center">
+                            <div class="col-auto pe-0">
+                                <div class="score-md score-color-good">99</div>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="font-weight-bold my-0">Critic Name</h5>
+                            </div>
+                            <div class="col-auto ms-auto">
+                                <p class="font-xsm my-0">NOV 11, 2021</p>
+                            </div>
+                        </div>
+                        <p class=" mt-3 overflow-hidden review-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- Users review -->
+                <div class="col-md-6 ps-4">
+                    <h5 class="font-weight-bold text-white">User Reviews</h5>
+                    <hr class="default-divider">
+                    <div id="reviewsContainer">
+                        <!-- Reviews will be dynamically added here -->
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="ssc-bg-primary text-white ">
+        <hr class="color-divider mt-4">
+        <img class="logo my-4 mx-auto d-block" src="../assets/skale-high-resolution-logo-white-transparent.png">
+        <div class="container mt-5 text-center pb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-2">
+                    <h5 class="font-heading">Overview</h5>
+                    <div class="nav flex-column">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                        <a class="nav-link text-white" href="about.html">About</a>
+                        <a class="nav-link text-white" href="profile.html">Profile</a>
+                        <a class="nav-link text-white" href="register.html">Create Account</a>
+                        <div class="d-md-none my-3"></div>
+                    </div>
+                </div>
+                <div class="col-md-2 d-flex flex-column">
+                    <h5 class="font-heading">About Us</h5>
+                    <div class="d-md-none my-3"></div>
+                    <div class=" mt-auto font-xsm d-md-inline d-none">&copy; 2024 SkaLeSync Corporation. All rights
+                        reserved.</div>
+
+                </div>
+                <div class="col-md-2">
+                    <h5 class="font-heading">Follow Us</h5>
+                    <div class="nav flex-column">
+                        <a class="nav-link text-white" href="#">Facebook</a>
+                        <a class="nav-link text-white" href="#">Twitter</a>
+                        <a class="nav-link text-white" href="#">Instagram</a>
+                        <div class="d-md-none my-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class=" font-xsm d-md-none">&copy; 2024 SkaLeSync Corporation. All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../models/Review.js"></script>'
+    <script src="../controllers/ReviewController.js"></script>
+    <script>
+        document.getElementById('reviewForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const review = document.getElementById('review').value;
+            ReviewController.addReview(review);
+        });
+    </script>
+    <script>
+        function displayReviews() {
+            const reviews = ReviewController.getReviewsForGame('bf2042'); // Replace 'bf2042' with your game's identifier
+            const reviewsContainer = document.getElementById('reviewsContainer'); // Ensure you have this container in HTML
+            reviewsContainer.innerHTML = ''; // Clear existing reviews
+
+            reviews.forEach(review => {
+                const reviewElement = document.createElement('div');
+                reviewElement.className = 'review-post';
+                reviewElement.innerHTML = `
+                    <div class="row align-items-center">
+                        <div class="col-auto pe-0">
+                            <div class="score-md score-color-good">99</div> <!-- Sample score, use actual scores -->
+                        </div>
+                        <div class="col-auto">
+                            <h5 class="font-weight-bold my-0">${review.user}</h5>
+                        </div>
+                        <div class="col-auto ms-auto">
+                            <p class="font-xsm my-0">${review.date}</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 overflow-hidden review-text">${review.content}</p>
+                `;
+                reviewsContainer.appendChild(reviewElement);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            displayReviews(); // Call this function to display reviews when the page loads
+        });
+    </script>
+</body>
+
+</html>
